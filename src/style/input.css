@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+    font-family: poppins;
+    src: url('/Poppins/Poppins-Medium.ttf');
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.out-color 
+{
+    background-color: #efedf7;
+}
+.right{
+    background-image: url('/image_processing20200317-17638-j96yss.png');
+    background-size: cover;
+    
+}
+.shadow-sign
+{
+    border-radius: 9px;
+background: #e4e4e4;
+box-shadow:  36px 36px 72px #d2d2d2,
+             -36px -36px 72px #f6f6f6;
+}
+.inner-color
+{
+    background-color: #fff;
+}
+.height_full 
+{
+    height: 100%;
+}
+.poppins 
+{
+    font-family: poppins;
+}
+input[type='text'],input[type='email'],input[type='password']
+{
+    background-color: #f7f6f9;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+input[type='text']:focus,input[type='email']:focus,input[type='password']:focus
+{
+    outline: transparent;
+    border: none;
+    background-color: #fff;
+}
+.text-title 
+{
+    font-size: 20px;
+}
+@media screen and (max-width:1200px)
+{
+    .right
+    {
+        display :none;
+        visibility: hidden;
+    }
+    .left
+    {
+        width: 100%;
+    }
+}
+/* ///////////////////////////////plans/////////////////////////////////////// */
+.bg-plan
+{
+    background: #5c5c5c;
+}
+.texta
+{
+    color: rgb(87,87,90);
+}
+.grad
+{
+    text-transform: uppercase;
+    background: rgb(0,0,0);
+    background: linear-gradient(360deg, rgba(0,0,0,0.6082808123249299) 0%, rgba(255, 255, 255, 0.836) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.item-color
+{
+    border-radius: 7px;
+background: #212121;
+box-shadow:  7px 7px 14px #131313,
+             -7px -7px 14px #2f2f2f;
+             border: 0.5px solid #f1f1f11c;
+}
+.poan-item
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.w-90 
+{
+    width: 90%;
+}
+.bg-neo 
+{
+    background-color: #383838;
+}
+/* ////////////////footer////////////////////////// */
+.footer
+{
+    background-color: #efedf7;
+}
+.footer-main
+{
+    background-color: #fff;
+}
+@media screen and (max-width:860px){
+    .news-letter 
+    {
+        display: flex;
+        flex-direction: row ;
+        flex-wrap: wrap;
+        width: 100%;
+        text-align: center;
+    }
+    .footer-item 
+    {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex-basis: (100%)/3;
+        overflow: scroll;
+
+    }
+}
